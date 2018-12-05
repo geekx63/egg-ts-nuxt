@@ -1,5 +1,5 @@
 import * as webpack from 'webpack';
-const config =  {
+const config = {
     dev: process.env.NODE_ENV !== 'production',
     /*
       ** Headers of the page
@@ -26,15 +26,15 @@ const config =  {
     */
     loading: { color: '#fff' },
     css: [],
-    srcDir: 'app/nuxt/',
-    buildDir: 'app/public/nuxt/',
+    srcDir: 'app/view/nuxt/',
+    buildDir: 'app/assets/.nuxt/',
     /*
     ** Build configuration
     */
     build: {
         analyze: false,
         cssSourceMap: false,
-        publicPath: '/public/nuxt/',
+        publicPath: '/assets/',
         vendor: [],
         plugins: [
             new webpack.ContextReplacementPlugin(
@@ -54,6 +54,5 @@ const config =  {
     ],
     router: {},
 };
-
-export default config
+export default config;
 export {config}
