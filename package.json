@@ -26,9 +26,11 @@
     "clean": "tslint --project . -c tslint.json"
   },
   "dependencies": {
+    "cross-env": "^5.2.0",
     "egg": "^2.14.1",
     "egg-scripts": "^2.10.0",
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.3.4",
+    "@nuxtjs/axios": "^5.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
@@ -42,7 +44,14 @@
     "egg-ts-helper": "^1.11.0",
     "tslib": "^1.9.3",
     "tslint": "^4.0.0",
-    "typescript": "^3.2.1"
+    "typescript": "^3.2.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "prettier": "1.14.3"
   },
   "engines": {
     "node": ">=8.9.0"
