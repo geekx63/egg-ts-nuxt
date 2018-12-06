@@ -1,6 +1,6 @@
 // import { createConnection } from "typeorm";
 import { Application, Context, EggAppConfig } from 'egg';
-import { Nuxt, Builder } from 'nuxt';
+import { Builder, Nuxt } from 'nuxt';
 // import 'reflect-metadata';
 import config from '../../nuxt.config';
 // Instantiate nuxt.js
@@ -10,8 +10,7 @@ export default function nuxtMiddleware(options: EggAppConfig['nuxt'], app: Appli
   if (options) {};
 
   let flag = false;
-  let routerArr = [];
-  app.coreLogger.debug('加载nuxt中间件，当前环境：', process.env.NODE_ENV);
+  let routerArr: string[] = [];
   if (config.dev) {
     const builder = new Builder(nuxt);
     builder.build();
